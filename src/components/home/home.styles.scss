@@ -1,0 +1,138 @@
+#home {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  position: relative;
+
+  @media screen and (max-width: 700px) {
+    grid-template-columns: 1fr;
+  }
+
+  .home_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 7rem;
+    margin-bottom: 4rem;
+    font-family: "Poppins";
+
+    @media screen and (max-width: 700px) {
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #fff;
+      text-transform: capitalize;
+      font-weight: bold;
+
+      @media screen and (max-width: 700px) {
+        text-align: center;
+        font-size: 2rem;
+      }
+    }
+
+    .animation {
+      margin-bottom: 0.5rem;
+      font-size: 2.5rem;
+      text-transform: capitalize;
+      font-weight: 500;
+
+      @media screen and (max-width: 700px) {
+        font-size: 1.5rem;
+      }
+
+      span {
+        color: #fff;
+      }
+
+      .dev {
+        color: #26c6da;
+      }
+    }
+
+    p {
+      color: #fff;
+      text-align: justify;
+    }
+
+    .btn {
+      margin-top: 0.6rem;
+
+      button {
+        margin-top: 1rem;
+        background: linear-gradient(to right, #00bcd4, #8c12f0);
+        color: #fff;
+        padding: 0.65rem 1rem;
+        border: none;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        width: 8rem;
+        margin-right: 1rem;
+
+        a {
+          color: #fff;
+        }
+
+        &:hover {
+          background: linear-gradient(to left, #00bcd4, #8c12f0);
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: capitalize;
+        background: linear-gradient(to left, #00bcd4, #8c12f0);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+    }
+  }
+
+  .home_rigth {
+    background: rgba(38, 198, 218, 0);
+    max-width: 360px;
+    height: 360px;
+    justify-self: center;
+    border-radius: 30% 70% 70% 30% / 35% 29% 70% 65%;
+    box-shadow: 0 0 20px #26c6da;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    top: -20px;
+
+    @media screen and (max-width: 700px) {
+      display: none;
+    }
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.3s ease-in-out;
+      animation: zoom 5s infinite;
+
+      @media screen and (max-width: 700px) {
+        display: none;
+      }
+
+      @keyframes zoom {
+        0% {
+          transform: scale(1);
+        }
+
+        50% {
+          transform: scale(1.1);
+        }
+
+        100% {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+}

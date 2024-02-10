@@ -1,0 +1,63 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 3rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  column-gap: 2rem;
+
+  .copyright {
+    p {
+      font-size: 0.85rem;
+
+      @media screen and (max-width: 700px) {
+        text-align: center;
+      }
+
+      span {
+        color: #00b4d8;
+        font-weight: 800;
+      }
+    }
+  }
+
+  .followMe {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    h4 {
+      font-size: 0.85rem;
+
+      @media screen and (max-width: 700px) {
+        margin-left: 1.3rem;
+      }
+    }
+
+    .stick {
+      height: 2px;
+      width: 3rem;
+      background: #fff;
+    }
+
+    .social_icons {
+      display: flex;
+      gap: 0.5rem;
+
+      svg {
+        opacity: 0.7;
+        cursor: pointer;
+        color: #fff;
+
+        &:hover {
+          opacity: 1;
+          color: #26c6da;
+        }
+      }
+    }
+  }
+}

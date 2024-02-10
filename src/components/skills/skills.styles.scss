@@ -1,0 +1,57 @@
+.select {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 5rem;
+
+  button {
+    color: #000;
+    background: #fff;
+    padding: 0.65rem 1rem;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    border: none;
+    margin-top: 1rem;
+    font-family: "Poppins";
+
+    &.active {
+      background: #00b4d8;
+      color: #fff;
+    }
+  }
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 700px;
+  row-gap: 4rem;
+
+  @media screen and (max-width: 500px) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .tools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 100px;
+      height: 70px;
+      color: #fff;
+    }
+
+    p {
+      color: #26c6da;
+      opacity: 0.8;
+    }
+  }
+}

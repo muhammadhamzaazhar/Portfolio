@@ -3,9 +3,14 @@ import { motion } from "framer-motion";
 
 import { bios } from "../../utils/data";
 import portfolio from "../../assets/portfolio.jpeg";
+import resumePDF from "../../assets/CV.pdf";
 import "./about.styles.scss";
 
 const About = () => {
+  const handleDownload = () => {
+    window.open(resumePDF, "_blank");
+  };
+
   return (
     <div className="container " id="about">
       <motion.div
@@ -60,8 +65,7 @@ const About = () => {
           })}
 
           <motion.a
-            href="#"
-            download=""
+            onClick={handleDownload}
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
           >

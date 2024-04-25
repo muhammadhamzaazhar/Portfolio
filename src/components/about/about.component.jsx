@@ -7,10 +7,6 @@ import resumePDF from "../../assets/CV.pdf";
 import "./about.styles.scss";
 
 const About = () => {
-  const handleDownload = () => {
-    window.open(resumePDF, "_blank");
-  };
-
   return (
     <div className="container " id="about">
       <motion.div
@@ -65,7 +61,8 @@ const About = () => {
           })}
 
           <motion.a
-            onClick={handleDownload}
+            href={resumePDF}
+            download=""
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
           >

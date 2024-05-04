@@ -30,6 +30,7 @@ import work3 from "../assets/blog-website.png";
 import work4 from "../assets/monsters-rolodex.png";
 import work5 from "../assets/netflix-clone.png";
 import work6 from "../assets/admin-dashboard.png";
+import work7 from "../assets/music-website.png";
 
 export const navLinks = ["home", "about", "skills", "portfolio", "contact"];
 
@@ -146,6 +147,14 @@ export const workImages = [
     projectName: "Admin Dashboard",
     deploy: "https://admin-dashboard-2024.netlify.app/",
     sourceCode: "https://github.com/muhammadhamzaazhar/React-Admin-Dashboard",
+  },
+  {
+    id: 7,
+    img: work7,
+    name: "project 7",
+    projectName: "Music Website",
+    deploy: "https://beatboxify.netlify.app/",
+    sourceCode: "https://github.com/muhammadhamzaazhar/Music-Website",
   },
 ];
 

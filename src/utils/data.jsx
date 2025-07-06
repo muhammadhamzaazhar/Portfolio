@@ -25,7 +25,6 @@ import { AiFillGithub } from "react-icons/ai";
 import { SiPostman, SiExpress, SiTailwindcss } from "react-icons/si";
 
 import work1Dev from "../assets/crwn-clothing.png";
-import work2Dev from "../assets/chat-app.png";
 import work3Dev from "../assets/blog-website.png";
 import work4Dev from "../assets/monsters-rolodex.png";
 import work5Dev from "../assets/netflix-clone.png";
@@ -112,14 +111,6 @@ export const workImagesDev = [
     projectName: "E-commerce App",
     deploy: "https://react-crwn-clothing-app.netlify.app/",
     sourceCode: "https://github.com/muhammadhamzaazhar/e-commerce-app",
-  },
-  {
-    id: 2,
-    img: work2Dev,
-    name: "project 2",
-    projectName: "Chat App",
-    deploy: "https://node-chat-room-8079e4634229.herokuapp.com/",
-    sourceCode: "https://github.com/muhammadhamzaazhar/Chat-App",
   },
   {
     id: 3,

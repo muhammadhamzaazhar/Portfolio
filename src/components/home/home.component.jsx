@@ -27,8 +27,8 @@ const Home = () => {
           className="animation"
         >
           <TypeAnimation
-            sequence={["Web Developer", 1000]}
-            speed={5}
+            sequence={["Web Developer", 3000, "AI Engineer", 3000]}
+            speed={1}
             className="dev"
             wrapper="span"
             repeat={Infinity}
@@ -41,11 +41,11 @@ const Home = () => {
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
         >
-          Welcome to my digital space! I'm a passionate web developer dedicated
-          to crafting engaging and user-friendly websites. With a keen eye for
-          design and a love for coding, I strive to bring ideas to life in the
-          virtual world. Explore the various facets of my portfolio, and let's
-          embark on a journey where creativity meets functionality.
+          I’m an AI Engineer with a background in web development. My work now
+          focuses on NLP, Computer Vision, Deep-Learning, LLMs, and AI
+          Automation. I design and deploy scalable AI solutions that bridge
+          development and innovation. I love turning complex ideas into
+          scalable, real-world solutions.
         </motion.p>
 
         <motion.div

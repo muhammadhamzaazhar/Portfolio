@@ -39,14 +39,13 @@ const About = () => {
           transition={{ duration: 1 }}
         >
           <p>
-            I'm a developer with a zest for creating seamless online
-            experiences. From front-end design to back-end development, I
-            immerse myself in the world of coding to build websites that not
-            only look great but also perform seamlessly. Whether you need a
-            landing page, a blog, an e-commerce site, or a web app, I can help
-            you turn your ideas into reality. Check out my portfolio to see some
-            of the projects I’ve worked on, and feel free to contact me if you
-            have any questions or inquiries.
+            I’m an AI engineer with a passion for building intelligent and
+            impactful solutions. Whether it’s designing and training models,
+            automating workflows, deploying LLMs, or bringing AI applications
+            into production, I love turning complex ideas into scalable
+            solutions. Check out my portfolio to see some of the projects I’ve
+            worked on, and feel free to contact me if you have any questions or
+            inquiries.
           </p>
           {bios.map((bio) => {
             return (

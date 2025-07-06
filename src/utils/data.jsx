@@ -22,7 +22,24 @@ import {
   BiLogoGit,
 } from "react-icons/bi";
 import { AiFillGithub } from "react-icons/ai";
-import { SiPostman, SiExpress, SiTailwindcss } from "react-icons/si";
+import {
+  SiPostman,
+  SiExpress,
+  SiTailwindcss,
+  SiTensorflow,
+  SiPytorch,
+  SiLangchain,
+  SiN8N,
+  SiHuggingface,
+  SiKeras,
+  SiScikitlearn,
+  SiPandas,
+  SiNumpy,
+  SiPlotly,
+  SiJupyter,
+  SiFastapi,
+  SiStreamlit,
+} from "react-icons/si";
 
 import work1Dev from "../assets/crwn-clothing.png";
 import work3Dev from "../assets/blog-website.png";
@@ -86,7 +103,7 @@ export const bios = [
   },
 ];
 
-export const icons = [
+export const iconsDev = [
   { icon1: <FaHtml5 />, name: "HTML" },
   { icon1: <FaCss3 style={{ marginLeft: "13px" }} />, name: "CSS-3" },
   { icon1: <SiTailwindcss />, name: "Tailwind" },
@@ -101,6 +118,22 @@ export const icons = [
   { icon1: <AiFillGithub />, name: "Github" },
   { icon1: <BiLogoGit />, name: "Git" },
   { icon1: <SiPostman />, name: "Postman" },
+];
+
+export const iconsAi = [
+  { icon1: <SiPytorch />, name: "PyTorch" },
+  { icon1: <SiTensorflow />, name: "TensorFlow" },
+  { icon1: <SiNumpy />, name: "Numpy" },
+  { icon1: <SiPandas />, name: "Pandas" },
+  { icon1: <SiScikitlearn />, name: "Scikit-Learn" },
+  { icon1: <SiPlotly />, name: "Plotly" },
+  { icon1: <SiKeras />, name: "Keras" },
+  { icon1: <SiLangchain />, name: "Langchain" },
+  { icon1: <SiN8N />, name: "n8n" },
+  { icon1: <SiHuggingface />, name: "Huggingface" },
+  { icon1: <SiJupyter />, name: "Jupyter" },
+  { icon1: <SiFastapi />, name: "Fastapi" },
+  { icon1: <SiStreamlit />, name: "Streamlit" },
 ];
 
 export const workImagesDev = [

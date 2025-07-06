@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-import { icons } from "../../utils/data";
+import { iconsDev, iconsAi } from "../../utils/data";
 import "./skills.styles.scss";
 
 const Skills = () => {
+  const [selectedCategory, setSelectedCategory] = useState("Dev");
+  const currentIcons = selectedCategory === "Dev" ? iconsDev : iconsAi;
+
   return (
     <div className="container" id="skills">
       <motion.div
@@ -12,37 +15,41 @@ const Skills = () => {
         whileInView={{ y: [-50, 0], opacity: 1 }}
         className="title"
       >
-        <span>What I Expert?</span>
-        <h1>Skills And Experience</h1>
+        <span>Technologies I Specialize In</span>
+        <h1>Skills And Technologies</h1>
       </motion.div>
 
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ y: [-50, 0], opacity: 1 }}
-        className="select"
-      >
+      <div className="buttons">
         <motion.button
-          animate={{ y: [0, -8, 0, 8, 0] }}
-          transition={{ duration: 3, repeat: Infinity }}
-          className="active"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className={selectedCategory === "Dev" ? "active" : ""}
+          onClick={() => setSelectedCategory("Dev")}
         >
-          Skills
+          Web Development
         </motion.button>
-      </motion.div>
+
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className={selectedCategory === "AI" ? "active" : ""}
+          onClick={() => setSelectedCategory("AI")}
+        >
+          Artificial Intelligence
+        </motion.button>
+      </div>
 
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ y: [-50, 0], opacity: 1 }}
         className="skills"
       >
-        {icons.map((icon, index) => {
-          return (
-            <div key={index} className="tools">
-              {icon.icon1}
-              <p>{icon.name.toUpperCase()}</p>
-            </div>
-          );
-        })}
+        {currentIcons.map((icon, index) => (
+          <div key={index} className="tools">
+            {icon.icon1}
+            <p>{icon.name.toUpperCase()}</p>
+          </div>
+        ))}
       </motion.div>
     </div>
   );

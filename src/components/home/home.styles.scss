@@ -92,18 +92,40 @@
   }
 
   .home_rigth {
-    background: rgba(38, 198, 218, 0);
+    background: linear-gradient(
+      135deg,
+      rgba(38, 198, 218, 0.4),
+      rgba(255, 255, 255, 0.1)
+    );
     max-width: 360px;
     height: 360px;
     justify-self: center;
-    border-radius: 30% 70% 70% 30% / 35% 29% 70% 65%;
-    box-shadow: 0 0 20px #26c6da;
+    border-radius: 42% 58% 36% 64% / 52% 33% 67% 48%;
+    box-shadow: 0 0 60px rgba(38, 198, 218, 0.4),
+      0 0 120px rgba(38, 198, 218, 0.4) inset;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     position: relative;
     top: -20px;
+    animation: morph 8s ease-in-out infinite;
+    backdrop-filter: blur(10px);
+    border: 7px solid rgba(170, 170, 187, 0.1);
+    background-clip: padding-box;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(0.3px);
+      pointer-events: none;
+      z-index: 2;
+      animation: frostGlow 6s ease-in-out infinite alternate;
+    }
 
     @media screen and (max-width: 700px) {
       display: none;
@@ -111,28 +133,55 @@
 
     img {
       object-fit: cover;
-      width: 100%;
-      height: 100%;
-      transition: transform 0.3s ease-in-out;
-      animation: zoom 5s infinite;
+      width: 110%;
+      height: 110%;
+      transition: transform 0.5s ease-in-out;
+      animation: zoom 6s ease-in-out infinite alternate;
+      border-radius: inherit;
+      z-index: 0;
 
       @media screen and (max-width: 700px) {
         display: none;
       }
+    }
+  }
 
-      @keyframes zoom {
-        0% {
-          transform: scale(1);
-        }
+  @keyframes morph {
+    0% {
+      border-radius: 42% 58% 36% 64% / 52% 33% 67% 48%;
+    }
+    50% {
+      border-radius: 58% 42% 64% 36% / 33% 52% 48% 67%;
+    }
+    100% {
+      border-radius: 42% 58% 36% 64% / 52% 33% 67% 48%;
+    }
+  }
 
-        50% {
-          transform: scale(1.1);
-        }
+  @keyframes frostGlow {
+    0% {
+      box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+        0 0 30px rgba(38, 198, 218, 0.3);
+    }
+    50% {
+      box-shadow: inset 0 0 35px rgba(255, 255, 255, 0.5),
+        0 0 60px rgba(38, 198, 218, 0.3);
+    }
+    100% {
+      box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.2),
+        0 0 30px rgba(38, 198, 218, 0.3);
+    }
+  }
 
-        100% {
-          transform: scale(1);
-        }
-      }
+  @keyframes zoom {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
     }
   }
 }

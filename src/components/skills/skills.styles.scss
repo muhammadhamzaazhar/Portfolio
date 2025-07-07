@@ -21,7 +21,6 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     overflow: hidden;
 
-    /* subtle glass layer */
     &::before {
       content: "";
       position: absolute;
@@ -34,13 +33,9 @@
     }
 
     &:hover {
-      background-position: right center; /* animate gradient */
+      background-position: right center;
       transform: translateY(-2px) scale(1.03);
       box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-
-      // &::before {
-      //   opacity: 1; /* show frosty layer on hover */
-      // }
     }
 
     &:active {

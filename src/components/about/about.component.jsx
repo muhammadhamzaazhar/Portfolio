@@ -62,10 +62,58 @@ const About = () => {
           <motion.a
             href={resumePDF}
             download=""
-            whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.3 }}
+            initial={{ "--x": "100%", scale: 1 }}
+            animate={{ "--x": "-100%" }}
+            whileTap={{ scale: 0.97 }}
+            transition={{
+              repeat: Infinity,
+              repeatType: "loop",
+              repeatDelay: 1,
+              type: "spring",
+              stiffness: 20,
+              damping: 15,
+              mass: 2,
+              scale: {
+                type: "spring",
+                stiffness: 10,
+                damping: 5,
+                mass: 0.1,
+              },
+            }}
+            className="radial-gradient"
+            style={{
+              color: "#1e293b",
+              padding: "1rem 1.5rem",
+              borderRadius: "0.375rem",
+              position: "relative",
+              display: "inline-block",
+              textDecoration: "none",
+              width: "220px",
+            }}
           >
-            Download Resume
+            <span
+              className="linear-mask"
+              style={{
+                color: "#f5f5f5",
+                letterSpacing: "0.05em",
+                fontWeight: 300,
+                display: "block",
+                position: "relative",
+                textAlign: "center",
+              }}
+            >
+              Download Resume
+            </span>
+            <span
+              className="linear-overlay"
+              style={{
+                display: "block",
+                position: "absolute",
+                inset: 0,
+                borderRadius: "0.375rem",
+                padding: "1px",
+              }}
+            />
           </motion.a>
         </motion.div>
       </div>

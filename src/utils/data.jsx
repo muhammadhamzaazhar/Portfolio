@@ -51,6 +51,7 @@ import work1AI from "../assets/langbot.png";
 import work2AI from "../assets/deepfake-video-detection.png";
 import work3AI from "../assets/social-profile-analyzer.png";
 import work4AI from "../assets/food-classification.png";
+import work5AI from "../assets/ai-persona.png";
 
 export const navLinks = ["home", "about", "skills", "portfolio", "contact"];
 
@@ -222,6 +223,14 @@ export const workImagesAI = [
     deploy: "https://food-classification-101.netlify.app/",
     sourceCode:
       "https://github.com/muhammadhamzaazhar/Food-Classification-using-Deep-Learning",
+  },
+  {
+    id: 5,
+    img: work5AI,
+    name: "project 5",
+    projectName: "AI Persona",
+    deploy: "https://anam-ai-persona.vercel.app/",
+    sourceCode: "https://github.com/muhammadhamzaazhar/Anam-AI-Persona",
   },
 ];
 

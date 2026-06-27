@@ -112,15 +112,17 @@ const Portfolio = () => {
                   >
                     <FiGithub />
                   </motion.a>
-                  <motion.a
-                    href={work.deploy}
-                    target="_blank"
-                    whileInView={{ scale: [0, 1] }}
-                    whileHover={{ scale: [1, 1.1] }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <FiEye />
-                  </motion.a>
+                  {work.deploy && (
+                    <motion.a
+                      href={work.deploy}
+                      target="_blank"
+                      whileInView={{ scale: [0, 1] }}
+                      whileHover={{ scale: [1, 1.1] }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <FiEye />
+                    </motion.a>
+                  )}
                 </>
               )}
             </motion.div>

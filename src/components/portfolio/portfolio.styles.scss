@@ -54,8 +54,9 @@
   }
 
   .workImage {
+    width: 100%;
     max-width: 380px;
-    height: 250px;
+    aspect-ratio: 380 / 250;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -75,7 +76,7 @@
 
       &.zoomedImg {
         object-fit: cover;
-        transform: scale(1.22);
+        object-position: center;
       }
     }
 

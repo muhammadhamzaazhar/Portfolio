@@ -25,11 +25,14 @@ const About = () => {
           transition={{ duration: 1 }}
           className="about_left"
         >
-          <motion.img
-            src={portfolio}
-            whileHover={{ y: -20, x: -26 }}
-            transition={{ duration: 0.3 }}
-          />
+          <div className="frame">
+            <span className="glow"></span>
+            <span className="corner corner_tl"></span>
+            <span className="corner corner_br"></span>
+            <div className="photo">
+              <img src={portfolio} alt="Hamza Azhar" />
+            </div>
+          </div>
         </motion.div>
 
         <motion.div
@@ -39,11 +42,12 @@ const About = () => {
           transition={{ duration: 1 }}
         >
           <p>
-            I’m an AI engineer with a passion for building intelligent and
-            impactful solutions. Whether it’s designing and training models,
-            automating workflows, deploying LLMs, or bringing AI applications
-            into production, I love turning complex ideas into scalable
-            solutions. Check out my portfolio to see some of the projects I’ve
+            I'm a Web Developer and AI Engineer with a passion for building
+            intelligent and impactful solutions. Whether it's developing
+            full-stack web applications, training Deep Learning models for
+            NLP and Computer Vision, or automating workflows and deploying
+            them into production, I love turning complex ideas into scalable
+            solutions. Check out my portfolio to see some of the projects I've
             worked on, and feel free to contact me if you have any questions or
             inquiries.
           </p>

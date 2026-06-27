@@ -41,11 +41,11 @@ const Home = () => {
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
         >
-          I’m an AI Engineer with a background in web development. My work now
-          focuses on NLP, Computer Vision, Deep-Learning, LLMs, and AI
-          Automation. I design and deploy scalable AI solutions that bridge
-          development and innovation. I love turning complex ideas into
-          scalable, real-world solutions.
+          I'm a Web Developer and AI Engineer specializing in Deep Learning,
+          covering NLP and Computer Vision, alongside AI-driven Automation.
+          I build full-stack web applications and design, train, and deploy
+          intelligent solutions that bridge development and innovation. I
+          love turning complex ideas into scalable, real-world solutions.
         </motion.p>
 
         <motion.div
@@ -65,13 +65,20 @@ const Home = () => {
         </motion.div>
       </div>
 
-      <div className="home_rigth">
-        <img
-          src={portfolio}
-          alt=""
-          style={{ width: "360px", height: "360px" }}
-        />
-      </div>
+      <motion.div
+        className="home_rigth"
+        variants={fadeIn("down", 0.3)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.7 }}
+      >
+        <span className="blob blob_one"></span>
+        <span className="blob blob_two"></span>
+        <div className="ring"></div>
+        <div className="photo">
+          <img src={portfolio} alt="Hamza Azhar" />
+        </div>
+      </motion.div>
     </div>
   );
 };

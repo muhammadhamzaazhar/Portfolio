@@ -111,7 +111,7 @@ export const socialIcons = [
   },
   {
     icon: <FaInstagram />,
-    link: "https://www.instagram.com/hamza._.002/",
+    link: "https://www.instagram.com/mhamza._.azhar/",
     name: "Instagram",
   },
   {

@@ -1,12 +1,17 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-import { iconsDev, iconsAi } from "../../utils/data";
+import { iconsDev, iconsAi, iconsAutomation } from "../../utils/data";
 import "./skills.styles.scss";
 
 const Skills = () => {
   const [selectedCategory, setSelectedCategory] = useState("Dev");
-  const currentIcons = selectedCategory === "Dev" ? iconsDev : iconsAi;
+  const currentIcons =
+    selectedCategory === "Dev"
+      ? iconsDev
+      : selectedCategory === "AI"
+      ? iconsAi
+      : iconsAutomation;
 
   return (
     <div className="container" id="skills">
@@ -36,6 +41,15 @@ const Skills = () => {
           onClick={() => setSelectedCategory("AI")}
         >
           Artificial Intelligence
+        </motion.button>
+
+        <motion.button
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className={selectedCategory === "Automation" ? "active" : ""}
+          onClick={() => setSelectedCategory("Automation")}
+        >
+          Automation
         </motion.button>
       </div>
 

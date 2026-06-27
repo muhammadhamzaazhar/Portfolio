@@ -1,0 +1,95 @@
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(0, 8, 20, 0.85);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.modalContent {
+  position: relative;
+  width: 100%;
+  max-width: 750px;
+  max-height: 88vh;
+  overflow-y: auto;
+  border-radius: 1rem;
+  background: linear-gradient(160deg, #0b1220, #0f172a);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+
+  .modalImage {
+    width: 100%;
+    aspect-ratio: 2400 / 1260;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .modalBody {
+    padding: 2rem;
+
+    h2 {
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    .description {
+      color: #cbd5e1;
+      line-height: 1.7;
+      font-size: 0.95rem;
+    }
+
+    .docLink {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+      padding: 0.6rem 1.2rem;
+      border-radius: 2rem;
+      background: linear-gradient(135deg, #06b6d4, #0f172a);
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.9rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 14px rgba(38, 198, 218, 0.25);
+      }
+    }
+
+    .testimonial {
+      margin-top: 2rem;
+      padding: 1.25rem 1.5rem;
+      border-left: 3px solid #26c6da;
+      background: rgba(38, 198, 218, 0.08);
+      border-radius: 0 0.75rem 0.75rem 0;
+
+      .quote {
+        color: #e2e8f0;
+        font-style: italic;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
+
+      .clientName {
+        color: #26c6da;
+        font-weight: 600;
+      }
+
+      .designation {
+        color: #94a3b8;
+        font-size: 0.85rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .modalBody {
+      padding: 1.5rem;
+    }
+  }
+}

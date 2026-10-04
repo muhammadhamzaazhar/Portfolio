@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 
 import { bios } from "../../utils/data";
 import portfolio from "../../assets/portfolio.jpeg";
-import resumePDF from "../../assets/CV.pdf";
 import "./about.styles.scss";
 
 const About = () => {
@@ -64,8 +63,8 @@ const About = () => {
           })}
 
           <motion.a
-            href={resumePDF}
-            download=""
+            href="#"
+            onClick={(e) => e.preventDefault()}
             initial={{ "--x": "100%", scale: 1 }}
             animate={{ "--x": "-100%" }}
             whileTap={{ scale: 0.97 }}

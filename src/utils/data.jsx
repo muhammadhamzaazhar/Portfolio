@@ -72,6 +72,9 @@ import work4AI from "../assets/food-classification.png";
 import work5AI from "../assets/ai-persona.png";
 import work6AI from "../assets/lung_card_xray.png";
 import work7AI from "../assets/mitosis_card_xai.png";
+import work0AutomationCard from "../assets/ai-video-automation-card.png";
+import work0AutomationPic from "../assets/ai-video-automation-cover.png";
+import work0AutomationDoc from "../assets/Evernect_AI_Video_Pipeline.pdf";
 import work1AutomationCard from "../assets/in-green-polska-lead-capture-agent-card.png";
 import work1AutomationPic from "../assets/in-green-polska-lead-capture-agent.png";
 import work1AutomationDoc from "../assets/In_Green_Polska_Voice_AI_Agent.pdf";
@@ -336,6 +339,20 @@ export const workImagesAI = [
 ];
 
 export const workImagesAutomation = [
+  {
+    id: 0,
+    img: work0AutomationCard,
+    descPic: work0AutomationPic,
+    documentation: work0AutomationDoc,
+    name: "project 0",
+    projectName: "AI Video Automation Pipeline",
+    description:
+      "A candidate standing in a US general election needed to publish short-form video constantly, reacting to news while it was still news – a pace no small communications team can match when every video has to be researched, scripted, filmed, edited, captioned, scheduled, and posted. We built an AI video pipeline that does all of it except the three decisions that should stay with a human: which story to cover, which script to use, and whether the finished video goes out. Every morning it reads the news on the candidate's campaign issues, his district, and the people named in the race, pulling the article text behind each shortlisted story rather than relying on headlines. Duplicate coverage is grouped, each story is scored on outlet count, locality, freshness, and relevance to the race, and anything already covered in the past week is pushed down. A dedicated selection step then surfaces up to three stories worth speaking about – each with an angle drafted in the candidate's own voice and checked against his published positions. The team picks one, and a single click produces three script variants, platform-specific captions, and hashtags. An AI presenter delivers the chosen script with captions burned in by a custom rendering service; the presenter look rotates, and the highlighted words and highlight colour are chosen per video, so the feed never looks templated. Once a person approves the finished video, it publishes itself to Facebook and Instagram at the scheduled time, offset by a few random minutes. Guardrails are built in: scripts may use only the supplied topic and angle, any angle that conflicts with or isn't covered by his published positions is flagged for the reviewer, every post carries an AI disclosure, and each news-based video traces back to its source articles. Every week the system compares its strongest and weakest videos and writes what the winners have in common into the guidance for the next round of scripts, so the writing keeps adapting to what the audience actually watches.",
+    clientName: "Glenn Arcaro",
+    designation: "Social Media Manager, US Political Candidate",
+    feedback:
+      "We needed to be part of the conversation every day, and a small team simply can't research, script, film, and edit at that pace. Now we start each morning with a shortlist of stories already scored and an angle drafted the way our candidate actually talks. We pick the story, pick the script, approve the finished video, and it goes out to Facebook and Instagram on schedule. What gave us confidence was the guardrails - anything that doesn't line up with a position we've already taken gets flagged before it reaches us, and every post traces back to its source. We keep control of every decision that matters, and the scripts keep getting sharper as the system learns what our audience responds to.",
+  },
   {
     id: 1,
     img: work7AutomationCard,

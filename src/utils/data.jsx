@@ -62,12 +62,12 @@ import work0bDev from "../assets/ring-recep.png";
 import work0cDev from "../assets/quote-m8.png";
 import work1Dev from "../assets/crwn-clothing.png";
 import work3Dev from "../assets/blog-website.png";
-import work5Dev from "../assets/netflix-clone.png";
+// import work5Dev from "../assets/netflix-clone.png";
 import work6Dev from "../assets/admin-dashboard.png";
 import work7Dev from "../assets/music-website.png";
 import work1AI from "../assets/langbot.png";
 import work2AI from "../assets/deepfake-video-detection.png";
-import work3AI from "../assets/social-profile-analyzer.png";
+// import work3AI from "../assets/social-profile-analyzer.png";
 import work4AI from "../assets/food-classification.png";
 import work5AI from "../assets/ai-persona.png";
 import work6AI from "../assets/lung_card_xray.png";
@@ -249,14 +249,14 @@ export const workImagesDev = [
     projectName: "Blog Website",
     sourceCode: "https://github.com/muhammadhamzaazhar/blog-website",
   },
-  {
-    id: 5,
-    img: work5Dev,
-    name: "project 5",
-    projectName: "Netflix Clone",
-    deploy: "https://react-netflix-2023.netlify.app/",
-    sourceCode: "https://github.com/muhammadhamzaazhar/Netflix-Clone",
-  },
+  // {
+  //   id: 5,
+  //   img: work5Dev,
+  //   name: "project 5",
+  //   projectName: "Netflix Clone",
+  //   deploy: "https://react-netflix-2023.netlify.app/",
+  //   sourceCode: "https://github.com/muhammadhamzaazhar/Netflix-Clone",
+  // },
   {
     id: 6,
     img: work6Dev,
@@ -294,15 +294,15 @@ export const workImagesAI = [
     sourceCode:
       "https://github.com/muhammadhamzaazhar/DeepFake-Video-Detection",
   },
-  {
-    id: 3,
-    img: work3AI,
-    name: "project 3",
-    projectName: "Social Profile Analyzer",
-    deploy: "https://huggingface.co/spaces/mhamza-007/Social-Profile-Analyzer",
-    sourceCode:
-      "https://huggingface.co/spaces/mhamza-007/Social-Profile-Analyzer/tree/main",
-  },
+  // {
+  //   id: 3,
+  //   img: work3AI,
+  //   name: "project 3",
+  //   projectName: "Social Profile Analyzer",
+  //   deploy: "https://huggingface.co/spaces/mhamza-007/Social-Profile-Analyzer",
+  //   sourceCode:
+  //     "https://huggingface.co/spaces/mhamza-007/Social-Profile-Analyzer/tree/main",
+  // },
   {
     id: 4,
     img: work4AI,
